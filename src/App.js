@@ -1,6 +1,7 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
+import Home from "./Home";
 
 function App() {
   return (
@@ -11,12 +12,20 @@ function App() {
             path="/"
             element={
               <>
-                <Header /> <h1>HOME PAGE!!</h1>
+                <Header />
+                <Home />
               </>
             }
           />
           <Route path="/Login" element={<h1>LOGIN PAGE!!!</h1>} />
-          <Route path="/checkout" element={<h1>CHECK-OUT PAGE!!!</h1>} />
+          <Route
+            path="/checkout"
+            element={
+              <>
+                <Header /> <h1>CHECK-OUT PAGE!!!</h1>
+              </>
+            }
+          />
 
           <Route path="*" element={<h1>NOT FOUND!!</h1>} />
         </Routes>
