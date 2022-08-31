@@ -2,6 +2,7 @@ import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./Header";
 import Home from "./Home";
+import Checkout from "./Checkout";
 
 function App() {
   return (
@@ -22,7 +23,8 @@ function App() {
             path="/checkout"
             element={
               <>
-                <Header /> <h1>CHECK-OUT PAGE!!!</h1>
+                <Header />
+                <Checkout />
               </>
             }
           />
